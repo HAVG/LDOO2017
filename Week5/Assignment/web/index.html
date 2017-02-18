@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Laboratorio 3</title>
+    <link rel="stylesheet" href="index-styles.css">
+    <script rel="script" src="check.js"></script>
+    <meta charset="UTF-8">
+    <meta name="Autor" content="Diego & Hector">
+    <meta name="Description" content="Laboratorio 3 de LDOO">
+</head>
+
+<body>
+<header>
+    <h1>Registro</h1>
+</header>
+
+<form method="post" action="Registro">
+    <article>
+        <section>
+            <p>
+                <label>Nombre Completo:</label><br>
+                <input type="text" name="txt-name">
+            </p>
+            <p>
+                <label>Email:</label><br>
+                <input type="text" name="txt-email">
+            </p>
+            <p>
+                <label>Usuario:</label><br>
+                <input type="text" name="txt-user">
+            </p>
+            <p>
+                <label>Constraseña:</label><br>
+                <input type="password" name="password">
+            </p>
+            <p>
+                <label>Mes de nacimiento:</label>
+                <select name="select-bm">
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+            </p>
+            <p>
+                <label>Soy mayor de edad:</label>
+                <input type="checkbox" name="chk-18">
+            </p>
+            <p>
+                <label>Genero:</label>
+                <br>
+                <input type="radio" name="gender" value="Hombre">Hombre
+                <br>
+                <input type="radio" name="gender" value="Mujer">Mujer
+            </p>
+            <p>
+                <label>Acerca de mi</label>
+                <textarea name="whoami" rows="5"></textarea>
+            </p>
+            <p>
+                <input type="reset" value="Vaciar">
+                <input type="button" value="Enviar" onclick="check()">
+            </p>
+        </section>
+    </article>
+</form>
+</body>
+
+</html>
