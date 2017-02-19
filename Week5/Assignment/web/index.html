@@ -3,9 +3,9 @@
 <head>
     <title>Laboratorio 3</title>
     <link rel="stylesheet" href="index-styles.css">
-    <script rel="script" src="check.js"></script>
+    <script rel="script" src="Check.js"></script>
     <meta charset="UTF-8">
-    <meta name="Autor" content="Diego & Hector">
+    <meta name="Autor" content="Mysshell & Hector">
     <meta name="Description" content="Laboratorio 3 de LDOO">
 </head>
 
@@ -13,57 +13,64 @@
 <header>
     <h1>Registro</h1>
 </header>
-
-<form method="post" action="Registro">
+<form method="post" action="Registro" name="form">
     <article>
         <section>
             <p>
-                <label>Nombre Completo:</label><br>
-                <input type="text" name="txt-name">
+                <label>Nombre Completo:<br>
+                    <input type="text" name="txt-name">
+                </label>
             </p>
             <p>
-                <label>Email:</label><br>
-                <input type="text" name="txt-email">
+                <label>Email:<br>
+                    <input type="text" name="txt-email">
+                </label>
             </p>
             <p>
-                <label>Usuario:</label><br>
-                <input type="text" name="txt-user">
+                <label>Usuario:<br>
+                    <input type="text" name="txt-user">
+                </label>
             </p>
             <p>
-                <label>Constraseña:</label><br>
-                <input type="password" name="password">
+                <label>Constraseña:<br>
+                    <input type="password" name="password">
+                </label>
             </p>
             <p>
-                <label>Mes de nacimiento:</label>
-                <select name="select-bm">
-                    <option value="1">Enero</option>
-                    <option value="2">Febrero</option>
-                    <option value="3">Marzo</option>
-                    <option value="4">Abril</option>
-                    <option value="5">Mayo</option>
-                    <option value="6">Junio</option>
-                    <option value="7">Julio</option>
-                    <option value="8">Agosto</option>
-                    <option value="9">Septiembre</option>
-                    <option value="10">Octubre</option>
-                    <option value="11">Noviembre</option>
-                    <option value="12">Diciembre</option>
-                </select>
+                <label>Mes de nacimiento:
+                    <select name="select-bm">
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                </label>
             </p>
             <p>
-                <label>Soy mayor de edad:</label>
-                <input type="checkbox" name="chk-18">
+                <label>Soy mayor de edad:
+                    <input type="checkbox" name="chk-18">
+                </label>
             </p>
             <p>
-                <label>Genero:</label>
-                <br>
-                <input type="radio" name="gender" value="Hombre">Hombre
-                <br>
-                <input type="radio" name="gender" value="Mujer">Mujer
+                <label>Genero:
+                    <br>
+                    <input type="radio" name="gender" value="Hombre">Hombre
+                    <br>
+                    <input type="radio" name="gender" value="Mujer">Mujer
+                </label>
             </p>
             <p>
-                <label>Acerca de mi</label>
-                <textarea name="whoami" rows="5"></textarea>
+                <label>Acerca de mi:
+                    <textarea name="whoami" rows="5"></textarea>
+                </label>
             </p>
             <p>
                 <input type="reset" value="Vaciar">
@@ -72,6 +79,6 @@
         </section>
     </article>
 </form>
+<p id="js"></p>
 </body>
-
 </html>
